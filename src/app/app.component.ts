@@ -37,7 +37,7 @@ export class AppComponent {
           (data) => {
             const dialogRef = this.dialog.open(HelloResponseModalComponent, {
               width: '400px',
-              data: data.nom  // Utilisez data.nom pour obtenir le nom depuis la réponse
+              data: data.nom
             });
           },
           (error) => {
