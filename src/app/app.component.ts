@@ -35,7 +35,7 @@ export class AppComponent {
       this.apiService.getHello(this.nameHello)
         .subscribe(
           (data) => {
-            console.log('data ' + data);
+            console.log('data ', data);
             const dialogRef = this.dialog.open(HelloResponseModalComponent, {
               width: '400px',
               data: data.nom
